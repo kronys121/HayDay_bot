@@ -13,12 +13,8 @@ numpy==2.2.6
 opencv-python==4.11.0.86
 packaging==25.0
 pillow==11.2.1
-pygame==2.6.1
 Pygments==2.19.2
-Pymem==1.14.0
-pywin32==310
 requests==2.32.4
 retry2==0.9.5
-uiautomator2==3.3.3
 urllib3==2.5.0
 win32_setctime==1.2.0
