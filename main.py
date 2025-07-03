@@ -39,6 +39,7 @@ template_add_adv = r'templates\add_adv.png'
 template_lvl_up= 'templates\lvlup.png'
 template_decline = 'templates\decline.png'
 template_try_again = r'templates\tryagain.png'
+template_game_icon = r'templates\gameicon.png'
 
 
 
@@ -114,11 +115,22 @@ def tap(sock, x, y, pressure=50):
 def find_shape(sock, device_id):
     logger.info(f"{device_id} - Ищу серп...")
     for i in range(1, 22):
+
         if find_and_tap(sock, template_try_again, device_id ):
-            time.sleep(15)
-            break
+            time.sleep(20)
+            zoom_out(sock, device_id)
+            find_dwarf(sock, device_id)
+            time.sleep(2)
+
+        if find_and_tap(sock, template_game_icon, device_id):
+            time.sleep(20)
+            zoom_out(sock, device_id)
+            find_dwarf(sock,device_id)
+            time.sleep(2)
+
         take_screenshot(device_id)
         coords = find_object(f'screen_{safe_filename(device_id)}.png', template_shape)
+
         if coords:
             x, y = coords[0]
             return x, y
