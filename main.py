@@ -111,9 +111,12 @@ def tap(sock, x, y, pressure=50):
     send_cmd(sock, 'c')
 
 
-def find_shape(device_id):
+def find_shape(sock, device_id):
     logger.info(f"{device_id} - Ищу серп...")
     for i in range(1, 22):
+        if find_and_tap(sock, template_try_again, device_id ):
+            time.sleep(15)
+            break
         take_screenshot(device_id)
         coords = find_object(f'screen_{safe_filename(device_id)}.png', template_shape)
         if coords:
@@ -193,7 +196,7 @@ def go_to_shop(sock, device_id):
 def harvest_with_sickle(sock, device_id):
     find_crop(sock, device_id)
     take_screenshot(device_id)
-    coords = find_shape(device_id)
+    coords = find_shape(sock, device_id)
     if coords is None:
         logger.warning(f"{device_id} - Серп не найден. Прерываю сбор.")
         return
