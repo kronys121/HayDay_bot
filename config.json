@@ -1,0 +1,8 @@
+{
+  "devices": [
+    { "device_id": "127.0.0.1:21503", "port": 1111, "enabled": true },
+    { "device_id": "127.0.0.1:21513", "port": 1112, "enabled": true },
+    { "device_id": "127.0.0.1:21523", "port": 1113, "enabled": true },
+    { "device_id": "127.0.0.1:21533", "port": 1114, "enabled": false }
+  ]
+}
