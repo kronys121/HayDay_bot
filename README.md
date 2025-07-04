@@ -21,10 +21,10 @@
    cd HayDay_bot
 3. **Запустите установку** (автоматически ставит зависимости):
    ```bash
-   Install.cmd
+   install.bat
 5. **Запустите бота**:
    ```bash
-   start.cmd
+   start.bat
    
 ---
 
