@@ -17,7 +17,7 @@
 1. **Установите Android SDK и добавьте папку где хранится ADB.exe в PATH** ([скачать для Windows](https://developer.android.com/tools/releases/platform-tools?hl=ru))  
 2. **Клонируйте репозиторий**:  
    ```bash
-   git clone https://github.com/kronys121/hay-day-auto-farmer.git
+   git clone https://github.com/kronys121/HayDay_bot.git
    cd hay-day-auto-farmer
 3. **Запустите установку** (автоматически ставит зависимости):
    ```bash
