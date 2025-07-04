@@ -14,7 +14,7 @@
 
 ## ⚙️ Установка и запуск  
 
-1. **Установите Android SDK** ([скачать для Windows](https://developer.android.com/tools/releases/platform-tools?hl=ru))  
+1. **Установите Android SDK и добавьте папку где хранится ADB.exe в PATH** ([скачать для Windows](https://developer.android.com/tools/releases/platform-tools?hl=ru))  
 2. **Клонируйте репозиторий**:  
    ```bash
    git clone https://github.com/ваш-ник/hay-day-auto-farmer.git
