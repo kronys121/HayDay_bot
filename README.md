@@ -18,7 +18,7 @@
 2. **Клонируйте репозиторий**:  
    ```bash
    git clone https://github.com/kronys121/HayDay_bot.git
-   cd hay-day-auto-farmer
+   cd HayDay_bot
 3. **Запустите установку** (автоматически ставит зависимости):
    ```bash
    Install.cmd
